@@ -81,7 +81,16 @@ Contributions from other developers are most welcome, but we have some rules tha
          export an API function must be placed directly below
          the function definition.
 
-
+   11. Some APIs are shell-specific, and that is OK.
+       For these, add them under the shell's
+       "Specific" subdirectory, and add the API
+       listing to the "api-list.txt" file located there.
+   
+   12. If something is both shell-specific and OS-specific,
+       then place the import file under the "Specific" directory
+       under the OS subdirectory, itself under the shell's
+       directory.  Again, don't forget to add the API listing
+       to the "api-list.txt" file in said "Specific" directory.
 
 
 More rules may be added in the future, but for now, this it.
