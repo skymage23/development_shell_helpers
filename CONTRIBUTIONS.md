@@ -74,6 +74,13 @@ Contributions from other developers are most welcome, but we have some rules tha
       "Universal" subdirectory. The "api-list.txt" file is allowed to be blank. That is
       fine for the first commit for a new shell.
 
+   10. All PowerShell import files must be "psm1" modules with
+       the API functions properly exported using "Export-ModuleName"
+
+       --For readability, the "Export-ModuleName" line to 
+         export an API function must be placed directly below
+         the function definition.
+
 
 
 
