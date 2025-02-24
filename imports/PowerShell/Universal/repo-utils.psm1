@@ -12,3 +12,4 @@ will have to reset the repository to a previous commit.
 
 "@ 
 }
+Export-ModuleMember -Function Write-RepoCorruptMessage
