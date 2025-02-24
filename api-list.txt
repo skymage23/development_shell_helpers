@@ -1,0 +1,26 @@
+#This file should be machine readable.
+# "#"              = comment.
+#
+# "**<name>"       = Declaration of a shell.
+#
+# "--<name>[-<os_name>]"       = Name of a file holding defined APIS for the shell indicated.
+#                                by the nearest "**" declaration above this declaration.
+#                               "-<os_name>" is optional, and, if present, declares that this
+#                                import file is specific to the OS "<os_name>", and is
+#                                located under that OS's subdirectory under the shell
+#                                directory. All files without this are assumed to be
+#                                placed under the shell's "Universal" subdirectory.
+#
+# "&&&&<api_name>" = Declaration that a specifict API of the name "<api_name>" has been
+#                    defined in the shell script file denoted by the nearest "--" entry
+#                    above this declaration for the neastes "**" entry above said
+#                    "--" entry.
+# "++++<os_name>++<name>
+
+**posix_shell
+--<repo_utils.sh>
+&&&&Write-RepoCorruptMessage
+
+**PowerShell
+--<repo_utils.ps1>
+&&&&Write-RepoCorruptMessage
