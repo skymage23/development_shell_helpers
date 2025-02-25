@@ -22,7 +22,7 @@ function Use-InThisBlockOnly{
     )
 
     try {
-        $null = &$block $object
+        $null = .$block $object
     } finally {
         $object.Dispose()
     }
