@@ -22,7 +22,7 @@ function Use-InThisBlockOnly{
     )
 
     try {
-        $null = .$block $object
+        $null = Invoke-Command -ScriptBlock $block -NoNewScope -ArgumentList $object
     } finally {
         $object.Dispose()
     }
