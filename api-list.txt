@@ -19,7 +19,7 @@
 
 **posix_shell
 --<repo_utils.sh>
-&&&&Write-RepoCorruptMessage
+&&&&Write_RepoCorruptMessage(Write-RepoCorruptMessage)
 
 **PowerShell
 --<repo_utils.ps1>
