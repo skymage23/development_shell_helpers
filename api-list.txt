@@ -24,3 +24,7 @@
 **PowerShell
 --<repo_utils.ps1>
 &&&&Write-RepoCorruptMessage
+
+**Python3
+--<repo_utils.py>
+&&&&Write_RepoCorruptMessage(Write-RepoCorruptMessage)

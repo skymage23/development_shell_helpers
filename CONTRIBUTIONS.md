@@ -68,6 +68,10 @@ Contributions from other developers are most welcome, but we have some rules tha
    then, in a comment above the include guard, put the filepath to the include file relative
    to the project base directory, delimiters and all.
 
+   -- -- Include guards are not required for Python scripts because Python caches modules by default,
+         and module source code is parsed only once (preserving module-local variables) 
+         unless the module is explicitly unloaded.
+
    9. When adding support for a new shell (thanks, by the way), in the project base directory,
       add a new directory for that shell, the "Universal" subdirectory for that shell, placed
       within said shell's newly created directory, and the "api-list.txt" file for said
