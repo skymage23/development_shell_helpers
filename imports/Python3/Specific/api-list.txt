@@ -1,0 +1,10 @@
+--<RepoUtils>
+====[module]
+
+--<RepoUtils/Errors.py>
+====[module]
+
+--<RepoUtils/Errors.py>.RepoCorruptError
+====[class]
+>>>>inherits:stdlib.Exception
+&&&&__init__
